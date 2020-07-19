@@ -1,1 +1,214 @@
 
+body{
+    font-family:'roboto',sans-serif;
+    background:black;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+*
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.sidebar
+{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 150%;
+    background: #5e6f64 ;
+    transition: all .5s ease;
+}
+.sidebar header
+{
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 70px;
+    background: #204051;
+}
+section .logo
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    line-height: 50px;
+    
+    
+}
+.sidebar ul a{
+    
+    
+    width:100%;
+    line-height: 65px;
+    font-size: 20px;
+    color:white; 
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: .4s;
+   
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+#check
+{
+    display: none;
+    width: 20px;
+    height: 25px;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+label #btn{
+    left:40px;
+    top:25px;
+    font-size: 35px;
+    color:white;
+    padding:6px 12px ;
+    transition: all .5s ;
+
+
+} 
+label #cancel
+{
+    z-index:1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding :4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~.sidebar{
+    left:0;
+
+}
+#check:checked ~label #btn{
+    left:250px;
+    opacity:0;
+    pointer-events: none;
+
+}
+#check:checked ~label #cancel{
+    left:195px;
+}
+section{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   scroll-snap-align: center;
+
+    
+}
+section h1{
+    font-size: 5rem;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section p{
+    font-size: 1.5rem;
+    color:white;
+}
+
+section#home
+{
+    background: url(sec1.jpg) no-repeat center center/cover;
+}
+section#events
+{
+    background: url(sec3.jpg) no-repeat center center/cover;
+}
+
+section#team
+{
+    background: url(sec4.jpg) no-repeat center center/cover;
+}
+
+section#gallery
+{
+    background: url(sec5.jpg) no-repeat center center/cover;
+}
+
+section#sponsors
+{
+    background: url(sec6.jpg) no-repeat center center/cover;
+}
+
+section#investor
+{
+    background: url(sec7.jpg) no-repeat center center/cover;
+}
+section#register
+{
+    background: url(sec9.jpg) no-repeat center center/cover;
+}
+section#blog{
+    background: url(sec10.jpg) no-repeat center center/cover;
+}
+section#contact{
+    background: url(sec11.jpg) no-repeat center center/cover;
+}
+.social{
+    
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 50vh;
+  
+ 
+     
+}
+.social h1{
+    align-items: center;
+    font-size: 3rem;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ .social a{
+    width: 50px;
+    height:50px;
+    color:black;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    text-align: center;
+    margin:10px;
+  
+  
+    box-shadow: 1px 4px 2px 2px rgb(117, 113, 113);
+}
+.social a i{
+    line-height: 50px;
+    transition: all 0.3s linear;
+    scroll-snap-align: center;
+
+    
+
+}
+.social a:hover i{
+    transform: scale(1.3);
+}
