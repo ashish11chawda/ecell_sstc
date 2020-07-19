@@ -133,41 +133,41 @@ section p{
 
 section#home
 {
-    background: url(images/sec1.jpg) no-repeat center center/cover;
+    background: url(./images/sec1.jpg) no-repeat center center/cover;
 }
 section#events
 {
-    background: url(images/sec3.jpg) no-repeat center center/cover;
+    background: url(./images/sec3.jpg) no-repeat center center/cover;
 }
 
 section#team
 {
-    background: url(images/sec4.jpg) no-repeat center center/cover;
+    background: url(./images/sec4.jpg) no-repeat center center/cover;
 }
 
 section#gallery
 {
-    background: url(images/sec5.jpg) no-repeat center center/cover;
+    background: url(./images/sec5.jpg) no-repeat center center/cover;
 }
 
 section#sponsors
 {
-    background: url(images/sec6.jpg) no-repeat center center/cover;
+    background: url(./images/sec6.jpg) no-repeat center center/cover;
 }
 
 section#investor
 {
-    background: url(images/sec7.jpg) no-repeat center center/cover;
+    background: url(./images/sec7.jpg) no-repeat center center/cover;
 }
 section#register
 {
-    background: url(images/sec9.jpg) no-repeat center center/cover;
+    background: url(./images/sec9.jpg) no-repeat center center/cover;
 }
 section#blog{
-    background: url(images/sec10.jpg) no-repeat center center/cover;
+    background: url(./images/sec10.jpg) no-repeat center center/cover;
 }
 section#contact{
-    background: url(images/sec11.jpg) no-repeat center center/cover;
+    background: url(./images/sec11.jpg) no-repeat center center/cover;
 }
 .social{
     
