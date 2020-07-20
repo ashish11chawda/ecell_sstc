@@ -139,44 +139,44 @@ section#home p{
 }
 section#home
 {
-    background: url(1.png) no-repeat center center/cover;
+    background: url(../images/1.png) no-repeat center center/cover;
 }
 section#events
 {
-    background: url(sec3.jpg) no-repeat center center/cover;
+    background: url(../images/sec3.jpg) no-repeat center center/cover;
 }
 
 section#team
 {
-    background: url(sec4.jpg) no-repeat center center/cover;
+    background: url(../images/sec4.jpg) no-repeat center center/cover;
 }
 
 section#gallery
 {
-    background: url(sec5.jpg) no-repeat center center/cover;
+    background: url(../images/sec5.jpg) no-repeat center center/cover;
 }
 
 section#sponsors
 {
-    background: url(sec6.jpg) no-repeat center center/cover;
+    background: url(../images/sec6.jpg) no-repeat center center/cover;
 }
 
 section#investor
 {
-    background: url(sec7.jpg) no-repeat center center/cover;
+    background: url(../images/sec7.jpg) no-repeat center center/cover;
 }
 section#register
 {
-    background: url(sec9.jpg) no-repeat center center/cover;
+    background: url(../images/sec9.jpg) no-repeat center center/cover;
 }
 section#blog{
-    background: url(sec10.jpg) no-repeat center center/cover;
+    background: url(../images/sec10.jpg) no-repeat center center/cover;
 }
 section#contact{
-    background: url(sec11.jpg) no-repeat center center/cover;
+    background: url(../images/sec11.jpg) no-repeat center center/cover;
 }
 section#achieve{
-    background: url(achieve.png) no-repeat center center;
+    background: url(../images/achieve.png) no-repeat center center;
     height:350%;
     width: 100%;
 }
