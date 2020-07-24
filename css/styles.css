@@ -32,7 +32,7 @@ body{
     transition: all .5s ease;
     
     scroll-behavior: smooth;
- 
+
 }
 .sidebar header
 {
@@ -119,18 +119,12 @@ section{
 section h1{
     font-size: 5rem;
     color:rgb(218, 188, 188);
+
     font-family: 'Abril Fatface', cursive;
     font-family: 'Grenze Gotisch', cursive;
 }
 
-section .logo
-{
-    
-  margin-left: 60%;
-  border-radius: 100%;
-  
 
-}
 section#home p{
     align-items: center;
    justify-content: center;
@@ -144,6 +138,7 @@ section#home h6{
     
     font-size: 2rem;
     font-family: 'Ubuntu', cursive;
+
 
 
 }
@@ -165,7 +160,24 @@ section#home
     background: url(i.png) no-repeat center left/cover;
     background-size: 100%;
  
+
+section .logo
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    line-height: 50px;
+    margin-top: 10px;
+    
+    
 }
+section#home p{
+    align-items: center;
+   justify-content: center;
+   text-align: center;
+    margin-top: 50px;
+}
+
 
 section#events
 {
@@ -202,9 +214,9 @@ section#contact{
     background: url() no-repeat center center/cover;
 }
 section#achieve .achievement{
-    
-    
-   
+    height:350%;
+    width: 100%;
+
 }
 
 
@@ -358,62 +370,3 @@ section#achieve .achievement{
       font-size: 16px;
       color:red;
   }
-  .images{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-right: 10px;
-    
-
-}
-.images a{
-    
-    
-    font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(128, 155, 206);
-}
-#slider .gallery-img{
- display:flex;
- align-items:center;
- justify-content: space-around;
- margin-bottom: 50%;
- margin-right: 35%;
-}
-#slider .gallery-img h1{
-    padding: 0;
-    margin: 0;
-    font-family: 'Grenze Gotisch', cursive;
-    font-size: 5rem;
-    color: rgb(204, 162, 221);
-    
-}
-#slider .gallery-img img{
-    padding:0;
-    margin:0;
-    width: inherit;
-
-}
-.event-head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.event-head h1{
-    font-size: 5rem;
-color:rgb(218, 188, 188);
-font-family: 'Abril Fatface', cursive;
-font-family: 'Grenze Gotisch', cursive;
-}
-
-.swiper-slide a
-{
-    
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding-top: 30%;
-    color: blanchedalmond;
-    font-size: 3rem;
-
-}
