@@ -3,23 +3,24 @@ body{
     background:black;
     color: #fff;
     line-height: 1.6;
-    height: 100vh;
     overflow: hidden;
 }
-*
-{
+
+*{
     margin:0;
     padding:0;
     list-style:none;
     text-decoration: none;
 }
+
 .container
 {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    
+ 
 }
 .sidebar
 {
@@ -31,7 +32,7 @@ body{
     transition: all .5s ease;
     
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+
 }
 .sidebar header
 {
@@ -118,8 +119,47 @@ section{
 section h1{
     font-size: 5rem;
     color:rgb(218, 188, 188);
-    font-family: 'Monoton', cursive;
+
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Grenze Gotisch', cursive;
 }
+
+
+section#home p{
+    align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 16px;
+ 
+}
+section#home h6{
+    
+  
+    
+    font-size: 2rem;
+    font-family: 'Ubuntu', cursive;
+
+
+
+}
+section#home h1{
+
+    
+    font-size: 8rem;
+    font-family: 'Ubuntu', cursive;
+
+
+}
+section#home .homepage{
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+section#home
+{
+    background: url(i.png) no-repeat center left/cover;
+    background-size: 100%;
+ 
 
 section .logo
 {
@@ -137,49 +177,50 @@ section#home p{
    text-align: center;
     margin-top: 50px;
 }
-section#home
-{
-    background: url(../images/1.png) no-repeat center center/cover;
-}
+
+
 section#events
 {
-    background: url(../images/sec3.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 
 section#team
 {
-    background: url(../images/sec4.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 
 section#gallery
 {
-    background: url(../images/sec5.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 
 section#sponsors
 {
-    background: url(../images/sec6.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 
 section#investor
 {
-    background: url(../images/sec7.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 section#register
 {
-    background: url(../images/sec9.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 section#blog{
-    background: url(../images/sec10.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 section#contact{
-    background: url(../images/sec11.jpg) no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
-section#achieve{
-    background: url(../images/achieve.png) no-repeat center center;
+section#achieve .achievement{
     height:350%;
     width: 100%;
+
 }
+
+
+
 .social{
     
     display: flex;
@@ -223,3 +264,109 @@ section#achieve{
 .social a:hover i{
     transform: scale(1.3);
 }
+[type=radio] {
+    display: none;
+  }
+  
+  #slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  #slider label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1, #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-30%,0,-200px);
+  }
+  
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2, #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-15%,0,-100px);
+  }
+  
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3, #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+  }
+  
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4, #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(15%,0,-100px);
+  }
+  
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5, #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%,0,-200px);
+  }
+  .swiper-pagination
+  {
+      padding: 0;
+      margin-bottom:15%;
+      background-color: rgb(153, 58, 58);
+      
+  }
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    
+    width: 400px;
+    height: 400px;
+    background: rgb(17, 15, 15);
+
+  }
+  .swiper-slide .imgBx
+  {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  }
+  .swiper-slide .imgBx img{
+      width: 100%;
+      
+  }
+  .swiper-slide .details{
+      box-sizing: border-box;
+      font-size: 20px;
+      padding: 20px;
+      
+  }
+  .swiper-slide .details h3{
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      text-align: center;
+      line-height: 20px;
+
+  }
+  .swiper-slide .details spam
+  {
+      font-size: 16px;
+      color:red;
+  }
