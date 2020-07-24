@@ -157,7 +157,7 @@ section#home .homepage{
 }
 section#home
 {
-    background: url(i.png) no-repeat center left/cover;
+    background: url(../images/i.png) no-repeat center left/cover;
     background-size: 100%;
  
 
@@ -178,7 +178,7 @@ section#home p{
     margin-top: 50px;
 }
 
-
+/*
 section#events
 {
     background: url() no-repeat center center/cover;
@@ -212,7 +212,7 @@ section#blog{
 }
 section#contact{
     background: url() no-repeat center center/cover;
-}
+}*/
 section#achieve .achievement{
     height:350%;
     width: 100%;
