@@ -1,10 +1,74 @@
 <html>
     <head>
-        <title>E-CELL SSTC</title>
-        <link rel="stylesheet" href="css\styles.css">
+       
+        <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Grenze+Gotisch:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .images{
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-right: 10px;
+                
+        
+            }
+           .images a{
+                
+                
+                font-size: 1rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(128, 155, 206);
+            }
+           #slider .gallery-img{
+             display:flex;
+             align-items:center;
+             justify-content: space-around;
+             margin-bottom: 50%;
+             margin-right: 35%;
+            }
+            #slider .gallery-img h1{
+                padding: 0;
+                margin: 0;
+                font-family: 'Grenze Gotisch', cursive;
+                font-size: 5rem;
+                color: rgb(204, 162, 221);
+                
+            }
+           #slider .gallery-img img{
+                padding:0;
+                margin:0;
+                width: inherit;
+            
+            }
+            .event-head{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .event-head h1{
+                font-size: 5rem;
+    color:rgb(218, 188, 188);
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Grenze Gotisch', cursive;
+}
+            
+            .swiper-slide a
+            {
+                
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                padding-top: 30%;
+                color: blanchedalmond;
+                font-size: 3rem;
+
+            }
+        </style>
+      
     </head>
     <body>
         <input type="checkbox" id="check">
@@ -20,60 +84,46 @@
             <ul>
                 <li><a href="#home"><i class="fas fa-qrcode">  HOME</i></a></li>
                 <li><a href="#team"><i class="fas fa-users"></i>  TEAM</a></li>
-                <li><a href="#events"><i class="fas fa-calendar-week">  EVENTS</i></a></li>
+                <li><a href="#event"><i class="fas fa-calendar-week">  EVENTS</i></a></li>
                 <li><a href="#achieve"><i class="fas fa-trophy"></i>  ACHIEVEMENTS</a></li>
                
-                <li><a href="#gallery"><i class="fas fa-camera-retro"></i>  GALLERY</a></li>
+                <li><a href="#slider"><i class="fas fa-camera-retro"></i>  GALLERY</a></li>
                 <li><a href="#sponsors"><i class="fas fa-address-card"></i>  SPONSORS</a></li>
                 <li><a href="#investor"><i class="fas fa-handshake"></i>  INVESTOR</a></li>
                 <li><a href="#register"><i class="fas fa-user-plus"></i>  REGISTER</a></li>
                 <li><a href="#blog"><i class="far fa-comment"></i>  BLOG</a></li>
-                <li><a href="#social"><i class="fa fa-phone"></i>  CONTACT</a></li>
+                <li><a href="#contact"><i class="fa fa-phone"></i>  CONTACT</a></li>
              
         </div>
         <div class="container">
-
-            <section id="home">
+        <section id="home">
             
-                <div class="homepage">
-              <div class="homepagetext">
-                     <h6>W<span style="color:yellow">E</span>L<span style="color:yellow">C</span>O<span style="color:yellow">M</span>E TO <span style="color:yellow">S</span>S<span style="color:yellow">T</span>C</h6>
-                <h1><span style="color:yellow">E</span>-C<span style="color:yellow">E</span>L<span style="color:yellow">L</span></h1>
-             </div>
-             <div class="homepagelogo">
-                <img src="logo.jpg" class="logo" alt="">
-             </div>
-             </div>
-              
-          
-             <p><i class="fa fa-2x fa-quote-left" aria-hidden="true"></i> IT is a student -run non-profit organisation to promtote the spirit of enterprenurshipamong students and establish a satrtup
-                 culture in the campus.<br>It was founded in the year 2017 with a motto to help the students,in making their ideas a reality.<br>We at E-CELL host various workshop ,speaker session
-                     innovative games,competitions for aspiring entreprenuers and support them by providing neccesary resources. <i class="fa fa-2x fa-quote-right" aria-hidden="true"></i>
-             
-             </p>
-             </section>
-
+           <div class="homepage">
+         <div class="homepagetext">
+                <h6>W<span style="color:yellow">E</span>L<span style="color:yellow">C</span>O<span style="color:yellow">M</span>E TO <span style="color:yellow">S</span>S<span style="color:yellow">T</span>C</h6>
+           <h1><span style="color:yellow">E</span>-C<span style="color:yellow">E</span>L<span style="color:yellow">L</span></h1>
+        </div>
+        <div class="homepagelogo">
+           <img src="logo.jpg" class="logo" alt="">
+        </div>
+        </div>
+         
+     
+        <p><i class="fa fa-2x fa-quote-left" aria-hidden="true"></i> IT is a student -run non-profit organisation to promtote the spirit of enterprenurshipamong students and establish a satrtup
+            culture in the campus.<br>It was founded in the year 2017 with a motto to help the students,in making their ideas a reality.<br>We at E-CELL host various workshop ,speaker session
+                innovative games,competitions for aspiring entreprenuers and support them by providing neccesary resources. <i class="fa fa-2x fa-quote-right" aria-hidden="true"></i>
+        
+        </p>
+        </section>
         <section id="team">
             <h1>
                 TEAM
             </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non reiciendis in architecto officia ex?</p>
 
-
         </section>
-        <section id="events">
-            <h1>
-                EVENTS
-            </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non reiciendis in architecto officia ex?</p>
-
-        </section>
-        <section id="achieve">
-           
-
-
-        </section>
-        <div class="event-head"  ><h1>
+      
+          <div class="event-head"  ><h1>
             EVENTS
         </h1></div>
             <div class="swiper-container" id="event">
@@ -195,10 +245,14 @@
                 });
               </script>
 
+      
         <section id="achieve">
-           
-
-      <section id="slider">
+            
+        </section>  
+       
+       
+       
+        <section id="slider">
             <div class="gallery-img">
                 <img src="gallery-img.png">
           
@@ -262,18 +316,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id non reiciendis in architecto officia ex?</p>
 
         </section>
-        <section id="timeline">
-            <a href="./src/timeline.html" style="text-decoration: none; color:aliceblue" target="_blank" rel="noopener noreferrer">Timeline</a>
-        </section>
+
+    
      
-        <div class="social">
+        <div class="social" id="contact">
             <h1>CONTACT US</h1>
         <a href="#"><i class="fa fa-2x fa-facebook"></i></a>
         <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
         <a href="#"><i class="fa fa-2x fa-twitter"></i></a>
         <a href="#"><i class="fa fa-2x fa-linkedin"></i></a>
         </div>
-       
-       </div> 
+    </div>
     </body>
 </html>
