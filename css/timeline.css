@@ -147,15 +147,16 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --grey: #9b9b9b;
 }
 
 body {
-  background: #3f3f3f;
+  background: #424242;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .timeline {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   position: relative;
 }
@@ -166,7 +167,7 @@ body {
   top: 0;
   bottom: 0;
   width: 6px;
-  background: #8b71db;
+  background: #888;
   left: 50%;
   margin-left: -3px;
 }
@@ -184,8 +185,8 @@ body {
   right: -13px;
   width: 25px;
   height: 25px;
-  background: #fc531f;
-  box-shadow: 0 0 0 3px #fc531f59;
+  background: #fff;
+  box-shadow: 0 0 0 3px #3f3f3f7a;
   border-radius: 50%;
   z-index: 2;
 }
@@ -228,12 +229,62 @@ body {
 
 .content {
   padding: 20px 30px;
-  background: #fc531f;
+  background: #424242 ;
   border-radius: 6px;
   color: #fff;
-  box-shadow:5px 5px 10px #fc531f, -5px -5px 10px #fc531f, -5px 5px 10px #fc531f, 5px -5px 10px #fc531f;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.25), -8px -8px 12px 0 rgba(129, 129, 129, 0.3);
+  /* box-shadow: 8px 8px 10px #4b4b4b, -8px -8px 10px #2f2f2f,inset 8px 8px 10px #4b4b4b,inset -8px -8px 10px #2f2f2f ; */
+  /* box-shadow:5px 5px 10px var(--grey), -5px -5px 10px var(--grey), -5px 5px 10px var(--grey), 5px -5px 10px var(--grey); */
 }
-
+.content:hover{
+  /* box-shadow: 8px 8px 8px 0 #4b4b4b,-8px -8px -8px 0 #b6b6b6 ; */
+ 
+  box-shadow: 8px 8px 16px 0 rgba(129, 129, 129, 0.3), -8px -8px 12px 0 rgba(0,0,0,0.25) ;
+}
+/* .content:hover{
+  animation: wave 2s ease-in-out infinite;
+}
+@keyframes wave{
+  from{
+    transform: scale(0);
+    opacity: 1;
+    filter: blur(0.2px);
+  }
+  to{
+    transform: scale(2);
+    opacity: 2;
+    filter: blur(2px);
+  }
+} */
+.content h1{
+  margin-bottom: 10px;
+  /* transition: background-color 1s ease-out 0.2s; */
+}
+.content h1,h3{
+  padding: 10px;
+}
+.content img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  filter: grayscale(1);
+}
+.content:hover img {
+  filter: grayscale(0);
+}
+.content:hover .person-name{
+  color: #00ffc8;
+  /* text-shadow: 8px 8px 16px rgba(0,0,0,0.25), -8px -8px 12px rgba(129, 129, 129, 0.3); */
+}
+.content:hover .name-body{
+   /* color: #fc531f;  */
+  color: #02eebd;
+}
+/* .content:hover .container::after:hover{
+  background-color: #fc531f;
+} */
 /* Mobile version */
 @media screen and (max-width: 600px) {
   .timeline::after {
