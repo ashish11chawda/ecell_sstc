@@ -1,16 +1,122 @@
-
-<!DOCTYPE html>
-<!-- add a color chnager for website background -->
 <html>
     <head>
        
-
-        <title>E-CELL</title>
+        
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Grenze+Gotisch:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/teams.css">
+        <link rel="stylesheet" href="css/carasouel.css">
+        <style>
+            .images{
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-right: 10px;
+                
+        
+            }
+           .images a{
+                
+                
+                font-size: 1rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(128, 155, 206);
+            }
+           #slider .gallery-img{
+             display:flex;
+             align-items:center;
+             justify-content: space-around;
+             margin-bottom: 50%;
+             margin-right: 35%;
+            }
+            #slider .gallery-img h1{
+                padding: 0;
+                margin: 0;
+                font-family: 'Grenze Gotisch', cursive;
+                font-size: 5rem;
+                color: rgb(204, 162, 221);
+                
+            }
+           #slider .gallery-img img{
+                padding:0;
+                margin:0;
+                width: inherit;
+            
+            }
+            .event-head{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .event-head h1{
+              font-size: 5rem;
+             color:rgb(218, 188, 188);
+             font-family: 'Abril Fatface', cursive;
+             font-family: 'Grenze Gotisch', cursive;
+             }
+            
+            .swiper-slide a
+            {
+                
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                padding-top: 30%;
+                color: blanchedalmond;
+                font-size: 3rem;
+
+            }
+            .btn {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: -7px -7px 20px 0 rgba(49, 47, 47, 0.9),
+      7px 7px 20px 0 rgba(31, 29, 29, 0.3);
+    transition: 0.2s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background:  rgb(0, 0, 0);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn:hover::before {
+    box-shadow: inset -7px -7px 20px 0  rgba(0, 0, 0,1),
+      inset 7px 7px 20px 0 rgba(75, 72, 72, 0.3);
+  }
+  
+  .btn i {
+    position: absolute;
+    color: rgb(73, 192, 192);
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+  }
+  
+  .btn:hover i {
+    font-size: 30px;
+  }
+  
+        </style>
       
     </head>
     <body>
@@ -33,10 +139,11 @@
                 <li><a href="#slider"><i class="fas fa-camera-retro"></i>  GALLERY</a></li>
                 <li><a href="#sponsors"><i class="fas fa-address-card"></i>  SPONSORS</a></li>
                 <li><a href="#investor"><i class="fas fa-handshake"></i>  INVESTOR</a></li>
-                <li><a href="#register"><i class="fas fa-user-plus"></i>  REGISTER</a></li>
-                <li><a href="#blog"><i class="far fa-comment"></i>  BLOG</a></li>
-                <li><a href="#contact"><i class="fa fa-phone"></i>  CONTACT</a></li>
-             </ul>
+               
+              
+                <li><a href="#contact"><i class="fa fa-phone"></i>  ABOUT US</a></li>
+                </ul>
+             
         </div>
         <div class="container">
         <section id="home">
@@ -46,9 +153,8 @@
                 <h6>W<span style="color:yellow">E</span>L<span style="color:yellow">C</span>O<span style="color:yellow">M</span>E TO <span style="color:yellow">S</span>S<span style="color:yellow">T</span>C</h6>
            <h1><span style="color:yellow">E</span>-C<span style="color:yellow">E</span>L<span style="color:yellow">L</span></h1>
         </div>
-        
-<div class="homepagelogo">
-           <img src="logo.jpg" class="logo" alt="">
+        <div class="homepagelogo">
+           <img src="images\logo.jpg" class="logo" alt="">
         </div>
         </div>
          
@@ -244,7 +350,7 @@
         <div class="container1">
             <div class="wrapper">
                 <a href="#">
-                    <img src="images\sir.jpg" alt="" id="sir1">
+                    <img src="images\sir.jpg" alt="" id="sir2">
                 </a>
                 <div class="text">
                     <div class="tittle">andrew neil</div>
@@ -261,7 +367,7 @@
         <div class="container1">
             <div class="wrapper">
                 <a href="#">
-                    <img src="images\sir.jpg" alt="" id="sir3">
+                    <img src="images\sir.jpg" alt="" id="sir2">
                 </a>
                 <div class="text">
                     <div class="tittle">andrew neil</div>
@@ -336,6 +442,7 @@
             <label for="s5" id="slide5">
                 <img src="images/5.png" height="100%" width="100%"><h3>heelo</h3>
             </label>
+           
           </section>
          
           <div class="images">
@@ -380,6 +487,6 @@
         <a href="#" class="btn"><i class="fa fa-2x fa-twitter"></i></a>
         <a href="#" class="btn"><i class="fa fa-2x fa-linkedin"></i></a>
         </div>
-</div>
+    </div>
     </body>
 </html>
