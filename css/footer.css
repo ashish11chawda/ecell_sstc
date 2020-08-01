@@ -1,0 +1,84 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    
+}
+.reach-us{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.map{
+    width: 100%;
+}
+.map iframe{
+    width: 300px;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.place-name ,.address, .phone, .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.place-name .sstc-name{
+    font-size: 30px;
+}
+.address .logo-text, .phone .logo-text, .email .logo-text{
+    font-size: 18px;
+}
+.logo-text{
+    margin-left: 10px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+#ecell-logo{
+    width: 128px;
+    height: 128px;
+}
+.navigation{
+    margin: auto;
+    margin-top: 1.5rem;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-heading{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navigation ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navigation ul li{
+    margin: 0;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.navigation ul li:hover{
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.foot-nav-list{
+    display: flex;
+    justify-content: center;
+}
