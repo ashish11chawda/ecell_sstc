@@ -1,8 +1,8 @@
-html, body {
+/* html, body {
   background: #e3e3d8;
   font-family: sans-serif;
   padding: 25px;
-}
+} */
 .accom{
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@ html, body {
 }
 .wrapper {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   height: 80vh;
   max-height: 500px;
   background: white;
@@ -161,8 +161,9 @@ html, body {
 }
 .details p{
   color: aqua;
+  padding-top: 20px;
   margin-bottom: auto;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.5s;
 }
 
