@@ -1,61 +1,62 @@
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans",sans-serif;
-    
-  }
-  
-  footer{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:ital,wght@0,300;1,900&family=Montserrat:wght@300;600&family=Raleway:wght@600&display=swap');
+footer{
     background: #494949;
-    /* padding: 90px 0; */
-    width: 100vw;
-    /* position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; */
+    width: 100%;
     color: #eeeeee;
   }
   
   .footer-container{
-    /* padding: 10px; */
-    width: 100vw;
-    
-    /* padding: 0 20px; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: nowrap;
-    
   }
   .left-col{
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .logo-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
   .left-col .content{
     margin: 10px 0;
   }
   .left-col .content .logo-name{
     font-size: 30px;
+    font-family: 'Josefin Sans', Courier, monospace;
+    font-weight: 500;
   }
+  .left-col .content .logo-name .ecell{
+    font-family: 'Montserrat', Courier, monospace;
+    font-weight: 600;
+  }
+  
   .left-col .content .address{
     padding: 10px 0;
+    font-family: 'Montserrat', Courier, monospace;
+    font-weight: 300;
   }
   .logo{
-    width: 180px;
+    width: 80px;
   }
   .contact-link a{
    margin: 20px;
     color: #eee;
   }
-  .address p a{
+  .address a{
     color: #eee;
     text-decoration: none;
   }
   .social-media{
-    /* margin: 20px 0; */
     width: 100%;
     text-align: center;
   }
@@ -74,13 +75,21 @@ body{
  .right-col{
    width: 40vw;
    overflow: hidden;
+   display: flex;
+   flex-direction: column;
  }
-  .right-col h1{
+  .right-col h2{
     font-size: 26px;
     width: fit-content;
+    align-self: flex-start;
+    font-family: 'Josefin Sans', Courier, monospace;
+    font-weight: 500;
   }
   .right-col p{
     width: fit-content;
+    align-self: center;
+    font-family: 'Montserrat', Courier, monospace;
+    font-family: 300;
   }
   
   .border{
@@ -97,8 +106,6 @@ body{
   }
   
   .txtb{
-    
-    /* padding: 5px 5px; */
     height: 40px;
     font-size: 16px;
     color: #293043;
@@ -107,11 +114,9 @@ body{
     font-weight: 700;
     outline: none;
     border-radius: 30px;
-    
   }
   
   .btn{
-    /* padding: 10px 20px; */
     height: 40px;
     font-size: 16px;
     color: #f1f1f1;
@@ -120,7 +125,6 @@ body{
     font-weight: 700;
     outline: none;
     border-radius: 30px;
-    /* margin-left: 20px; */
     cursor: pointer;
     transition: opacity .3s linear;
   }
@@ -147,12 +151,7 @@ body{
  }
 
 .footer-bottom{
-  /* position: absolute;
-  margin: auto;
-  bottom: 0;
-  left: 0; */
   text-align: center;
-  
   width: 100%;
   background: #383838;
   color: #808080;
@@ -161,8 +160,7 @@ body{
   @media screen and (max-width:960px) {
    
     .right-col{
-      width: 100%;
-      
+      width: 100%; 
     }
     .middle-col{
       width: 100%;
@@ -175,14 +173,14 @@ body{
   
   
   @media screen and (max-width:700px){
+    .logo-content{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .footer-container{
       flex-wrap: wrap-reverse;
     }
-    .btn{
-      /* margin: 0; */
-      /* width: 100%; */
-      /* margin-top: 20px; */
-      }
       .left-col .logo-name{
         font-size: 25px;
       }
