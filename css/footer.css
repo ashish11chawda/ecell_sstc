@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:ital,wght@0,300;1,900&family=Montserrat:wght@300;600&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@300;600&display=swap');
 footer{
     background: #494949;
     width: 100%;
     color: #eeeeee;
+    z-index: 1000;
   }
   
   .footer-container{
@@ -13,7 +14,7 @@ footer{
     flex-wrap: nowrap;
   }
   .left-col{
-    margin-left: 15px;
+    margin-left: 35px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -167,7 +168,7 @@ footer{
     }
     .left-col{
       width: 100%;
-      text-align: center;
+      
     }
   }
   
@@ -180,6 +181,9 @@ footer{
     }
     .footer-container{
       flex-wrap: wrap-reverse;
+    }
+    .left-col{
+      text-align: center;
     }
       .left-col .logo-name{
         font-size: 25px;
