@@ -146,9 +146,18 @@ footer{
      display: block;
      text-decoration: none;
      color: #eee;
+     font-family: 'Josefin Sans', Courier, monospace;
+     margin: 15px 0; 
+ }
+ .middle-col a:hover span{
+   background-color: rgba(255,255,255,0.1);
+   width: max-content;
+   padding: 3%;
  }
  .middle-col p{
    font-size: 25px;
+   font-family: 'Montserrat', Courier, monospace;
+   font-weight: 600;
  }
 
 .footer-bottom{
